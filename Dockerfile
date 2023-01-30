@@ -15,7 +15,7 @@ RUN npm install
 
 # Copy rest of the files (index.ts, etc)
 COPY . .
-
+EXPOSE 3000
 
 #  CONFIG DATABASE
 # RUN apk add postgresql-client
