@@ -5,7 +5,7 @@ class Postgress {
   constructor() {}
   public initDbConnection(): void {
     const config = {
-      host: "localhost",// process.env.POSTGRES_HOST,
+      host: process.env.POSTGRES_HOST,
       database: process.env.POSTGRES_DB,
       port: 5432,
       user: process.env.POSTGRES_USER,
