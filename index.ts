@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
-const port = 4000;
+const port = 3000;
 
 /**
  *  Read the list of latest {limit} or 1800 (30 min) daily probes
