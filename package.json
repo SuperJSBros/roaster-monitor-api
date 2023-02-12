@@ -2,11 +2,11 @@
   "name": "roaster-monitor-api",
   "version": "1.0.0",
   "description": "Backend for my coffee roaster monitor",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon index.ts",
+    "start": "ts-node index.ts"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,18 @@
   },
   "homepage": "https://github.com/SuperJSBros/roaster-monitor-api#readme",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pg": "^8.9.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.13.0",
+    "@types/pg": "^8.6.6",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
   }
 }
