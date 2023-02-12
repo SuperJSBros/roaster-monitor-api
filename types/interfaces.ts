@@ -13,6 +13,7 @@ export interface IDailyProbeReading extends IProbeReading {
 
 export interface IBatch {
     id: string,
-    probe: number,
-    createdAt: Date
+    name:string,
+    weight: number,
+    origin: string
 }
