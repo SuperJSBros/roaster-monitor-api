@@ -90,7 +90,7 @@ app.get("/load-test-data", async (req, res) => {
     if (count > rows.length) {
       clearInterval(intervalId);
     }
-    const probe = Number(rows[count].split(',')[1]); // use 2nd column
+    const probe = Number(rows[count].split(',')[1]); // use 2nd column (probe mesurements)
     probeDailyReposiory.insertDailyProbe(probe)
     ++count
   }, 1000);
